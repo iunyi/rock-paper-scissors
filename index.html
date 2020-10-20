@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/main.css">
+    <title>Rock Paper Scissors</title>
+</head>
+<body>
+    <header class="header">
+        <div class="wrapper">
+            <h1>Rock Paper Scissors</h1>
+        </div>    
+    </header>
+    <main class="main">
+        <div class="wrapper">
+            <div class="scoreboard">
+                <!-- User avatar -->
+                <div class="scoreboard_user">
+                    <div class="user_bubble">
+                        <img class="user_bubble-image" src="./images/bubble.png" alt="">
+                        <span class="user_bubble-message"></span>
+                    </div>
+                    <span class="user_avatar">
+                        <img class="user_avatar-image" src="./images/user.png" alt="">
+                    </span>
+                    <span class="user_score">0</span>
+                </div>
+                <span>VS</span>
+                <!-- Robot avatar -->
+                <div class="scoreboard_pc">
+                    <div class="pc_bubble">
+                        <img class="pc_bubble-image" src="./images/bubble.png" alt="">
+                        <span class="pc_bubble-message"></span>
+                    </div>
+                    <span class="pc_avatar">
+                        <img class="pc_avatar-image" src="./images/robot.png" alt="">
+                    </span>
+                    <span class="pc_score">0</span>
+                </div>
+            </div>
+            <div class="choices">
+                <div class="choices_choice" id="rock">
+                    <img src="images/rock.png" >
+                </div>
+                <div class="choices_choice" id="paper">
+                    <img src="images/paper.png">
+                </div>
+                <div class="choices_choice" id="scissors">
+                <img src="images/scissors.png">
+                </div>
+            </div>
+        </div>
+    </main>
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,257 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 100;
+  color: #6f6f6f;
+}
+
+.header {
+  width: 100vw;
+  min-width: 300px;
+  height: 15vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #d9e2ff;
+}
+
+.header .wrapper {
+  width: 100%;
+  max-width: 1000px;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main {
+  width: 100vw;
+  min-width: 300px;
+  height: 85vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #d9e2ff;
+}
+
+.main .wrapper {
+  width: 300px;
+  height: 70%;
+  min-height: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #bfceff;
+  border-radius: 24px;
+}
+
+@media all and (min-width: 480px) {
+  .main .wrapper {
+    width: 400px;
+  }
+}
+
+@media all and (min-width: 768px) {
+  .main .wrapper {
+    width: 600px;
+  }
+}
+
+.main .scoreboard {
+  width: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 24px;
+}
+
+.main .scoreboard_user, .main .scoreboard_pc {
+  width: 200px;
+  height: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main .scoreboard .user_bubble,
+.main .scoreboard .pc_bubble {
+  width: 70px;
+  height: 70px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media all and (min-width: 480px) {
+  .main .scoreboard .user_bubble,
+  .main .scoreboard .pc_bubble {
+    width: 90px;
+    height: 90px;
+  }
+}
+
+.main .scoreboard .user_bubble-image,
+.main .scoreboard .pc_bubble-image {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.main .scoreboard .user_bubble-message,
+.main .scoreboard .pc_bubble-message {
+  position: absolute;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.main .scoreboard .user_bubble-image {
+  -webkit-transform: rotateY(180deg) translateX(50px);
+          transform: rotateY(180deg) translateX(50px);
+}
+
+.main .scoreboard .user_bubble-message {
+  -webkit-transform: translateX(-50px);
+          transform: translateX(-50px);
+  font-family: 'Nanum Pen Script';
+  font-size: 20px;
+}
+
+@media all and (min-width: 480px) {
+  .main .scoreboard .user_bubble-message {
+    font-size: 24px;
+  }
+}
+
+.main .scoreboard .pc_bubble-image {
+  -webkit-transform: translateX(50px);
+          transform: translateX(50px);
+}
+
+.main .scoreboard .pc_bubble-message {
+  -webkit-transform: translateX(50px);
+          transform: translateX(50px);
+  font-family: 'Chakra Petch', sans-serif;
+  font-size: 12px;
+}
+
+@media all and (min-width: 480px) {
+  .main .scoreboard .pc_bubble-message {
+    font-size: 16px;
+  }
+}
+
+.main .scoreboard .user_avatar,
+.main .scoreboard .pc_avatar {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 10px;
+}
+
+.main .scoreboard .user_avatar-image,
+.main .scoreboard .pc_avatar-image {
+  width: 100%;
+  height: 100%;
+}
+
+.main .choices {
+  width: 80%;
+  height: 30%;
+  max-width: 1200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main .choices_choice {
+  width: 70px;
+  height: 70px;
+  background-color: #ffffff;
+  padding: 20px;
+  margin: 5px;
+  border-radius: 50%;
+}
+
+@media all and (min-width: 480px) {
+  .main .choices_choice {
+    width: 90px;
+    height: 90px;
+    margin: 10px;
+  }
+}
+
+.main .choices_choice img {
+  width: 100%;
+  height: 100%;
+}
+
+.main .choices .win {
+  background-color: #d9ffe8;
+}
+
+.main .choices .lose {
+  background-color: #ffcbca;
+}
+
+.main .choices .draw {
+  -webkit-filter: opacity(40%);
+          filter: opacity(40%);
+}
+/*# sourceMappingURL=main.css.map */
