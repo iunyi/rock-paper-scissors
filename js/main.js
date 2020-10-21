@@ -3,6 +3,10 @@
 const rock = document.querySelector('#rock');
 const paper = document.querySelector('#paper');
 const scissors = document.querySelector('#scissors');
+const userName = document.querySelector('.user_name');
+const pcName = document.querySelector('.pc_name');
+const userBubble = document.querySelector('.user_bubble-image');
+const pcBubble = document.querySelector('.pc_bubble-image');
 let userMessage = document.querySelector('.user_bubble-message')
 let pcMessage = document.querySelector('.pc_bubble-message')
 const userScoreBoard = document.querySelector('.user_score');
@@ -18,7 +22,17 @@ function getPcChoice() {
     return choices[randomNumber];
 }
 
+function removeIntroduction() {
+    userName.classList.add('hidden');
+    pcName.classList.add('hidden');
+    userBubble.classList.remove('hidden');
+    pcBubble.classList.remove('hidden');
+}
+
 function playersSays(userChoice, pcChoice) {
+    if (userBubble.classList.contains('hidden')) {
+        removeIntroduction();
+    }
     userMessage.innerHTML = userChoice + '!'
     pcMessage.innerHTML = pcChoice + '!'
 }

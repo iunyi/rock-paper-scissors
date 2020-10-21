@@ -242,15 +242,19 @@
   height: 100%;
 }
 
-.main .choices .win {
+.main .hidden {
+  display: none;
+}
+
+.main .win {
   background-color: #d9ffe8;
 }
 
-.main .choices .lose {
+.main .lose {
   background-color: #ffcbca;
 }
 
-.main .choices .draw {
+.main .draw {
   -webkit-filter: opacity(40%);
           filter: opacity(40%);
 }

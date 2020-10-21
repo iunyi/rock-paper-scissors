@@ -181,18 +181,21 @@ $color-lose: #ffcbca;
         height: 100%;
       }
     }
+  }
+  // 3. JS added classes
+  .hidden {
+    display: none;
+  }
 
-    // 3. JS added classes
-    .win {
-      background-color: $color-win;
-    }
+  .win {
+    background-color: $color-win;
+  }
 
-    .lose {
-      background-color: $color-lose;
-    }
+  .lose {
+    background-color: $color-lose;
+  }
 
-    .draw {
-      filter: opacity(40%);
-    }
+  .draw {
+    filter: opacity(40%);
   }
 }
